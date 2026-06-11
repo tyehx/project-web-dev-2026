@@ -25,13 +25,15 @@
     document.getElementById("naamInvoer").addEventListener("input", controleerKnop);
 
     document.getElementById("RollKnop").addEventListener("click", function() {
-      var cijfer1 = Math.floor(Math.random() * 10);
-      var cijfer2 = Math.floor(Math.random() * 10);
-      var cijfer3 = Math.floor(Math.random() * 10);
+  var cijfers = [
+    Math.floor(Math.random() * 10),
+    Math.floor(Math.random() * 10),
+    Math.floor(Math.random() * 10)
+  ];
 
-      document.getElementById("resultaat").innerText = cijfer1 + " " + cijfer2 + " " + cijfer3;
+document.getElementById("resultaat").innerText = cijfers[0] + " " + cijfers[1] + " " + cijfers[2];
 
-      if (cijfer1 === cijfer2 && cijfer2 === cijfer3) {
+if (cijfers[0] === cijfers[1] && cijfers[1] === cijfers[2]) {
         document.getElementById("bericht").innerText = "WIN!";
       } else {
         document.getElementById("bericht").innerText = "Probeer opnieuw!";
