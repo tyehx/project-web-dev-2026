@@ -10,3 +10,11 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.getElementById("regels").addEventListener("change", function() {
+    
+    if (this.checked) {
+        document.getElementById("speelKnop").disabled = false; // knop wordt klikbaar
+    } else {
+        document.getElementById("speelKnop").disabled = true; // knop wordt grijs
+    }
+});
