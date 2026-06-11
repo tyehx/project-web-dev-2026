@@ -7,19 +7,44 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <button class="button-3" role="button" data-target="../index.html">Home</button>
-    <button class="button-3" role="button" data-target="game.html">Game</button>
-    <button class="button-3" role="button" data-target="about.html">About</button>
+    <header>
+        <img src="../media/logo.png" alt="logo">
+        <h1>{Project WebDev}</h1>
+    </header>
 
+    <nav>
+        <button class="button-3" role="button" data-target="../index.html">Home</button>
+        <button class="button-3" role="button" data-target="game.html">Game</button>
+        <button class="button-3" role="button" data-target="about.html">About</button>
+    </nav>
 
-    <input type="checkbox" id="regels"> 
-    <label for="regels">Ik heb de regels gelezen</label>
-    <button id="speelKnop" disabled>Speel!</button>
-    <!-- source https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/disabled -->
-    <!-- source https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/checkbox -->
+    <main>
+        <input type="checkbox" id="regels"> 
+        <label for="regels">Ik ga akkoord met de ToS.</label>
+        <button id="RollKnop" disabled>Roll</button>
+        <!-- source https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/disabled -->
+        <!-- source https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/checkbox -->
+    </main>
+        <!-- sources
+            https://www.w3schools.com/html/html_tables.asp
+            https://www.w3schools.com/Tags/tag_footer.asp#:~:text=The%20tag%20defines%20a,copyright%20information
 
+        -->
+    <footer>
+        <table>
+            <tr>
+                <th>School</th>
+                <th>Adres</th>
+                <th>Stad</th>
+            </tr>
+            <tr>
+                <td>Campus Het Spoor</td>
+                <td>Begonialaan 34</td>
+                <td>2400 Mol</td>
+            </tr>
+        </table>
+    </footer>
 
-    
     <script src="../js/app.js"></script>
 </body>
 </html>

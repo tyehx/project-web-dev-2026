@@ -1,4 +1,7 @@
-/*SOURCE https://getcssscan.com/css-buttons-examples*/
+/*SOURCES https://getcssscan.com/css-buttons-examples*/
+.background {
+  background:url(https://wallpapers.com/wallpapers/chic-dark-background-0q8rq2ev1myx9s1c.html)
+}
 .button-3 {
   appearance: none;
   background-color: #2ea44f;
@@ -48,4 +51,16 @@
 .button-3:active {
   background-color: #298e46;
   box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+
+#RollKnop {
+  display: block;
+  margin: 10px auto;
+}
+
+
+#regels, label {
+  display: block;
+  text-align: center;
 }

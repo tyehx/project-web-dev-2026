@@ -18,3 +18,8 @@ document.getElementById("regels").addEventListener("change", function() {
         document.getElementById("speelKnop").disabled = true; // knop wordt grijs
     }
 });
+
+
+//sources voor checkbox \
+//https://www.w3schools.com/jsref/prop_checkbox_checked.asp 
+//https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
