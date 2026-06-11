@@ -10,14 +10,19 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.getElementById("regels").addEventListener("change", function() {
-    
-    if (this.checked) {
-        document.getElementById("RollKnop").disabled = false; // knop wordt klikbaar
+function controleerKnop() {
+    var naam = document.getElementById("naamInvoer").value;
+    var checkbox = document.getElementById("regels").checked;
+
+    if (naam !== "" && checkbox) {
+        document.getElementById("RollKnop").disabled = false; //knop word klikbaar
     } else {
-        document.getElementById("RollKnop").disabled = true; // knop wordt grijs
+        document.getElementById("RollKnop").disabled = true;  //knop word gedisabled
     }
-});
+}
+
+document.getElementById("regels").addEventListener("change", controleerKnop);
+document.getElementById("naamInvoer").addEventListener("input", controleerKnop);
 
 document.getElementById("RollKnop").addEventListener("click", function() {
     // genereert random cijfer van 0-10
@@ -41,4 +46,5 @@ document.getElementById("RollKnop").addEventListener("click", function() {
 //https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
 //https://www.w3schools.com/js/js_random.asp
 //https://www.w3schools.com/jsref/met_document_getelementbyid.asp
-//
+//https://www.w3schools.com/jsref/prop_text_value.asp
+//https://www.w3schools.com/jsref/event_oninput.asp
