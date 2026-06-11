@@ -59,6 +59,7 @@
 #RollKnop {
   display: block;
   margin: 10px auto;
+  color: black;
 }
 
 #regels {
@@ -87,4 +88,9 @@ main {
     margin: 10px auto;
     padding: 6px 16px;
     font-size: 14px;
+    color: black;
+}
+
+body {
+  color: white;
 }
