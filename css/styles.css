@@ -81,3 +81,10 @@ footer {
 main {
     text-align: center;
 }
+
+#naamInvoer {
+    display: block;
+    margin: 10px auto;
+    padding: 6px 16px;
+    font-size: 14px;
+}
