@@ -36,7 +36,16 @@
       } else {
         document.getElementById("bericht").innerText = "Probeer opnieuw!";
       }
+       
     });
+    document.getElementById("hulpKnop").addEventListener("click", function() {
+    var tekst = document.getElementById("hulpTekst");
+    if (tekst.style.display === "none") {
+      tekst.style.display = "block";
+  } else {
+      tekst.style.display = "none";
+  }
+});
   }
 
 
