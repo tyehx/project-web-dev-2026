@@ -1,14 +1,22 @@
 /*SOURCES https://getcssscan.com/css-buttons-examples en https://www.w3schools.com/css/css3_buttons.asp */
 
-body {
-  font-size: 12px;
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 1024px) {
   body {
     font-size: 16px;
   }
-
+}
 .background {
   background-image: url(https://raw.githubusercontent.com/tyehx/project-web-dev-2026/main/media/background%20webdev.jpg);
   background-size: cover;
