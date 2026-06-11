@@ -1,5 +1,5 @@
 /*SOURCES https://getcssscan.com/css-buttons-examples en https://www.w3schools.com/css/css3_buttons.asp */
-
+/* Responsive design */
 @media (max-width: 480px) {
   body {
     font-size: 12px;
@@ -16,12 +16,14 @@
   body {
     font-size: 16px;
   }
+  /* Background */
 }
 .background {
   background-image: url(https://raw.githubusercontent.com/tyehx/project-web-dev-2026/main/media/background%20webdev.jpg);
   background-size: cover;
   background-position: center;
 }
+/* Buttons */
 .button-3 {
   appearance: none;
   background-color: #2ea44f;
@@ -121,7 +123,7 @@ a:visited {
   color: white;
 }
 
-
+/* Animatie shake */
 @keyframes shake {
   0% { transform: translate(0) }
   25% { transform: translate(-10px) }
@@ -133,7 +135,7 @@ a:visited {
 .shake {
   animation: shake 0.5s;
 }
-
+/* hulp knop */
 #hulpKnop {
   position: fixed;
   top: 10px;

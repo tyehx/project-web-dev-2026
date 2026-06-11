@@ -1,4 +1,4 @@
-
+// navigation knoppen
   var buttons = document.querySelectorAll("button[data-target]");
   buttons.forEach(function (button) {
     button.addEventListener("click", function () {
@@ -30,7 +30,7 @@
     Math.floor(Math.random() * 10),
     Math.floor(Math.random() * 10)
   ];
-
+// array en toont de cijfers
 document.getElementById("resultaat").innerText = cijfers[0] + " " + cijfers[1] + " " + cijfers[2];
 
 if (cijfers[0] === cijfers[1] && cijfers[1] === cijfers[2]) {
@@ -50,7 +50,7 @@ if (cijfers[0] === cijfers[1] && cijfers[1] === cijfers[2]) {
 });
   }
 
-
+//controleer of naam is ingevuld en de checkbox is aangevinkt.
 function controleerKnop() {
   var naam = document.getElementById("naamInvoer").value;
   var checkbox = document.getElementById("regels").checked;
