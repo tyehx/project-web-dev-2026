@@ -41,6 +41,15 @@ document.getElementById("RollKnop").addEventListener("click", function() {
     }
 });
 
+document.getElementById("shakeKnop").addEventListener("click", function() {
+  document.body.classList.add("shake");
+  setTimeout(function() {
+    document.body.classList.remove("shake");
+  }, 500);
+});
+
+
+
 //sources
 //https://www.w3schools.com/jsref/prop_checkbox_checked.asp 
 //https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
