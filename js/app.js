@@ -13,9 +13,9 @@ document.addEventListener("DOMContentLoaded", function () {
 document.getElementById("regels").addEventListener("change", function() {
     
     if (this.checked) {
-        document.getElementById("speelKnop").disabled = false; // knop wordt klikbaar
+        document.getElementById("RollKnop").disabled = false; // knop wordt klikbaar
     } else {
-        document.getElementById("speelKnop").disabled = true; // knop wordt grijs
+        document.getElementById("RollKnop").disabled = true; // knop wordt grijs
     }
 });
 

@@ -1,6 +1,8 @@
 /*SOURCES https://getcssscan.com/css-buttons-examples*/
 .background {
-  background:url(https://wallpapers.com/wallpapers/chic-dark-background-0q8rq2ev1myx9s1c.html)
+  background-image: url(https://wallpapers.com/wallpapers/chic-dark-background-0q8rq2ev1myx9s1c.html);
+  background-size: cover;
+  background-position: center;
 }
 .button-3 {
   appearance: none;
@@ -59,8 +61,19 @@
   margin: 10px auto;
 }
 
+#regels {
+  display: block;
+  margin: 10px auto;
+  width: fit-content;
+}
 
-#regels, label {
+label[for="regels"] {
   display: block;
   text-align: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
